@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://101.43.217.193:3306/fanta
+    username: mmsong
+    password: QWEASDZXC123!@#
+
+    # redis 配置
+  redis:
+    port: 6379
+    host: 101.43.217.193
+    database: 0
+
+server:
+  port: 7529
+  servlet:
+    context-path: /api
