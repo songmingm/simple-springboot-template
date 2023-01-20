@@ -1,0 +1,9 @@
+exclude:
+  urls:
+    - /doc.html
+    - /swagger-ui/**
+    - /swagger-resources
+    - /webjars/**
+    - /v3/api-docs
+    - /user/login
+#    - /user/register

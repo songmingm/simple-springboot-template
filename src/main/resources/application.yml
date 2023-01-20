@@ -13,9 +13,12 @@ spring:
   profiles:
     active: dev
 
+  # 时区设置
+  jackson:
+    time-zone: GMT+8
+
 mybatis-plus:
   configuration:
-    map-underscore-to-camel-case: false
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
   global-config:
     db-config:

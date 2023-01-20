@@ -1,4 +1,4 @@
-package com.fanta.server.model.dto.interfaceInfo;
+package com.fanta.server.model.dto.users;
 
 /**
  * 用户注册参数

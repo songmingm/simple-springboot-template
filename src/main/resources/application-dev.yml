@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://101.43.217.193:3306/fanta
+    url: jdbc:mysql://101.43.217.193:3306/fanta?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
     username: mmsong
     password: QWEASDZXC123!@#
 
@@ -13,5 +13,3 @@ spring:
 
 server:
   port: 7529
-  servlet:
-    context-path: /api

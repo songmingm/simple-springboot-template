@@ -21,7 +21,7 @@ public class SysUserEntity extends BaseTimeEntity {
     /**
      * 用户昵称
      */
-    private String userName;
+    private String username;
 
     /**
      * 账号
@@ -36,7 +36,7 @@ public class SysUserEntity extends BaseTimeEntity {
     /**
      * 性别
      */
-    private Integer gender;
+    private Integer UserGender;
 
     /**
      * 用户角色: user, admin
@@ -49,9 +49,15 @@ public class SysUserEntity extends BaseTimeEntity {
     private String userPassword;
 
     /**
-     * 是否删除
+     * 用户状态
      */
-    @TableLogic
+    private int userStatus;
+
+    /**
+     * 是否删除
+     * select = false 不做查询
+     */
+    @TableField(select = false)
     private Integer isDelete;
 
     @TableField(exist = false)

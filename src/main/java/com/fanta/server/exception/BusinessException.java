@@ -12,19 +12,15 @@ import lombok.EqualsAndHashCode;
 @Data
 public class BusinessException extends RuntimeException {
 
-    private int code;
-    private final String message;
+    private ErrorCodesEnum error;
+    private String message;
 
-    public BusinessException() {
-        this.message = super.getMessage();
-    }
-
-    public BusinessException(String message) {
+    public BusinessException(ErrorCodesEnum error, String message) {
+        this.error = error;
         this.message = message;
     }
 
-    public BusinessException(ErrorCodesEnum errorCode) {
-        this.code = errorCode.getCode();
-        this.message = errorCode.getMessage();
+    public BusinessException(ErrorCodesEnum error) {
+        this.error = error;
     }
 }
